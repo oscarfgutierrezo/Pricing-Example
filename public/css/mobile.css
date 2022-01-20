@@ -23,8 +23,9 @@ body {
     position: relative;
     width: 92.5%;
     min-width: 29.6rem;
+    max-width: 90rem;
     height: auto;
-    min-height: 42.5rem;
+    min-height: 28.8rem;
     margin: 1.6rem auto 3.2rem;
 }
 
@@ -73,6 +74,7 @@ body {
     width: 100%;
     min-width: 29.6rem;
     max-width: 70rem;
+    height: auto;
     margin: 0 auto;
     padding: 0 1.6rem;
     text-align: center;
@@ -91,4 +93,232 @@ body {
     line-height: 1.5;
     color: #6c757d;
 }
+
+.main {
+    position: relative;
+    width: 92.5%;
+    min-width: 29.6rem;
+    max-width: 90rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-plans__container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    gap: 2.4rem;    
+}
+
+.plan-card__container {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 29.6rem;
+    max-width: 32rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    color: #212529;
+}
+
+.plan-cardcontainer--grey-border {
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.plan-cardcontainer--blue-border {
+    border: 1px solid var(--main-blue);
+}
+
+.plan-card__title {
+    padding: 1.6rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.plan-card__title--grey-back {
+    background-color: var(--grey);
+}
+
+.plan-card__title--blue-back {
+    color: #fff;
+    background-color: var(--main-blue);
+}
+
+.plan-card__title h2 {
+    font-size: calc(2.04rem + 0.3vw);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.plan-card__info {
+    padding: 1.6rem;
+    text-align: center;
+}
+
+.plan-card__info-price {
+    margin-bottom: 1.6rem;
+    font-size: calc(2.2rem + 1.5vw);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.plan-card__info-price span {
+    font-size: calc(1.6rem + 1.5vw);
+    font-weight: 300;
+    color: #6c757d;
+}
+
+.plan-card__info ul {
+    font-size: 1.6rem;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.plan-card__light-button {
+    display: block;
+    width: 100%;
+    height: 4.8rem;
+    margin-top: 2.4rem;
+    padding: 0.8rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--main-blue);
+    border: 0.1rem solid var(--main-blue);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.plan-card__dark-button {
+    display: block;
+    width: 100%;
+    height: 4.8rem;
+    margin-top: 2.4rem;
+    padding: 0.8rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: var(--main-blue);
+    border: 0.1rem solid var(--main-blue);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.main-compare-plans {
+    width: 100%;
+    max-width: 90rem;
+    min-width: 29.6rem;
+    margin: 0 auto 1.6rem;
+}
+
+.main-compare-plans__title {
+    margin-bottom: 2.4rem;
+    font-size: calc(2.2rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    color: #212529;
+}
+
+.main-compare-plans__table {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.main-compare-plans__table th {
+    width: 34%;
+    text-align: left;
+    padding: 0.8rem;
+}
+
+.main-compare-plans__table td {
+    width: 22%;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.main-compare-plans__table .strong-border {
+    border-bottom: 0.2rem solid var(--black);
+}
+
+.main-compare-plans__table .soft-border {
+    border-bottom: 0.1rem solid #dee2e6;
+}
+
+.footer {
+    width: 92.5%;
+    max-width: 90rem;
+    min-width: 29.6rem;
+    height: auto;
+    margin: 0 auto 1.6rem;
+}
+
+.footer__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;   
+    padding-top: 2.4rem;
+    border-top: 0.1rem solid #dee2e6;
+}
+
+.footer__logo {
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.footer__logo .fa-bootstrap {
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    color: #7411f6;
+}
+
+.footer__logo p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+}
+
+.footer__list-container {
+    width: 50%;
+    padding: 0 1.6rem 1.6rem 0;
+}
+
+.footer__list-title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.footer__list {
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer__list li {
+    margin-bottom: 0.4rem;
+}
+
+.footer__list a {
+    color: #565e64;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
 
