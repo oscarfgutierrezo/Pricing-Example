@@ -35,11 +35,12 @@ body {
     border-bottom: 0.1rem solid #dee2e6;
 }
 
-.header__logo {
+.header__logo{
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--black);
+    text-decoration: none;
 }
 
 .header__logo .fa-bootstrap {
@@ -48,19 +49,17 @@ body {
 }
 
 .header__logo h2 {
-    font-size: calc(2.04rem + 0.3vw);
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
 .header__links-container {
-    margin: 0 auto 0.8rem;
-    max-width: 28.2rem;
-}
-
-.header__links-container ul {
+    width: 100%;
+    width: 28.2rem;
+    margin: 0 auto;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
     font-size: 1.6rem;
     list-style: none;
 }
@@ -82,7 +81,7 @@ body {
 
 .header__info h1 {
     margin-bottom: 0.8rem;
-    font-size: calc(2.36rem + 2.7vw);
+    font-size: calc(2.36rem + 1.7vw);
     font-weight: 400;
     line-height: 1.2;
 }
@@ -115,17 +114,16 @@ body {
     margin: 0 auto;
     width: 100%;
     min-width: 29.6rem;
-    max-width: 32rem;
     border-radius: 0.5rem;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     color: #212529;
 }
 
-.plan-cardcontainer--grey-border {
+.plan-card__container--grey-border {
     border: 1px solid rgba(0,0,0,.125);
 }
 
-.plan-cardcontainer--blue-border {
+.plan-card__container--blue-border {
     border: 1px solid var(--main-blue);
 }
 
@@ -157,13 +155,13 @@ body {
 
 .plan-card__info-price {
     margin-bottom: 1.6rem;
-    font-size: calc(2.2rem + 1.5vw);
+    font-size: calc(2.2rem + 0.9vw);
     font-weight: 500;
     line-height: 1.2;
 }
 
 .plan-card__info-price span {
-    font-size: calc(1.6rem + 1.5vw);
+    font-size: calc(1.6rem + 1vw);
     font-weight: 300;
     color: #6c757d;
 }
@@ -189,6 +187,17 @@ body {
     text-decoration: none;
 }
 
+.plan-card__light-button:hover {
+    background-color: var(--main-blue);
+    color: #fff;
+}
+
+.plan-card__light-button:focus {
+    background-color: var(--main-blue);
+    color: #fff;
+    box-shadow: 0 0 0 0.4rem rgb(13 110 253 / 50%);
+}
+
 .plan-card__dark-button {
     display: block;
     width: 100%;
@@ -205,6 +214,17 @@ body {
     text-decoration: none;
 }
 
+.plan-card__dark-button:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.plan-card__dark-button:focus {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.4rem rgb(13 110 253 / 50%);
+}
+
 .main-compare-plans {
     width: 100%;
     max-width: 90rem;
@@ -214,7 +234,7 @@ body {
 
 .main-compare-plans__title {
     margin-bottom: 2.4rem;
-    font-size: calc(2.2rem + 1.5vw);
+    font-size: calc(2.2rem + 1vw);
     font-weight: 300;
     line-height: 1.2;
     text-align: center;
@@ -249,19 +269,16 @@ body {
     border-bottom: 0.1rem solid #dee2e6;
 }
 
-.footer {
+.footer__container {
+    position: relative;
     width: 92.5%;
     max-width: 90rem;
     min-width: 29.6rem;
     height: auto;
-    margin: 0 auto 1.6rem;
-}
-
-.footer__container {
-    position: relative;
+    margin: 4.8rem auto 1.6rem;
     display: flex;
     flex-wrap: wrap;   
-    padding-top: 2.4rem;
+    padding-top: 4.8rem;
     border-top: 0.1rem solid #dee2e6;
 }
 
@@ -272,7 +289,7 @@ body {
 
 .footer__logo .fa-bootstrap {
     margin-bottom: 0.8rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #7411f6;
 }
 

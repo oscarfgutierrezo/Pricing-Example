@@ -1,0 +1,22 @@
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-plans__container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.plan-card__container {
+    width: 31%;
+    min-width: 21.8rem;
+    margin: 0;
+}
+
+.footer__logo, .footer__list-container {
+    width: 25%;
+}
